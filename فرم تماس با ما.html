@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Contact Form</title>
+    <meta charset="utf-8" />
+    <style type="text/css"> 
+        /*
+	Author: Mahan sotlani
+         Teacher:navid imani
+*/
+        
+        /*
+   ======= سبک بدنه ======== 
+    */
+        
+        body
+        {
+            padding: 50px 100px;
+            font-size: 13px;
+            font-style: Verdana, Tahoma, sans-serif;
+        }
+        
+        /*====== h2 خاصیت ====== */
+        h2
+        {
+            margin-bottom: 20px;
+            color: #474E69;
+            font-family: Tahoma;
+            direction: rtl;
+        }
+        
+        /*
+   ====== فرم ارتباط ======= 
+   */
+        
+        input, textarea
+        {
+            padding: 10px;
+            border: 1px solid #E5E5E5;
+            width: 200px;
+            color: #999999;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+        }
+        
+        /*====== textarea خاصیت ====== */
+        textarea
+        {
+            width: 400px;
+            height: 150px;
+            max-width: 400px;
+            line-height: 18px;
+        }
+        
+        /*====== قرار گیری ماوس روی کادر های متنی ====== */
+        
+        input:hover, textarea:hover, input:focus, textarea:focus
+        {
+            border-color: 1px solid #C9C9C9;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+        }
+        
+        /*====== label خاصیت ====== */
+        .form label
+        {
+            margin-left: 10px;
+            color: #999999;
+            font-family: Tahoma;
+        }
+        
+        /*
+   ====== دکمه ارسال ====== 
+   */
+        
+        .submit input
+        {
+            width: 100px;
+            height: 40px;
+            background-color: #474E69;
+            color: #FFF;
+            border-radius: 3px;
+            font-family: Tahoma;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        فرم ارتباط با ما</h2>
+    <form class="form" dir="rtl">
+    <p class="name">
+        <input type="text" name="name" id="name" placeholder="ماهان سلطانی" />
+        <label for="name">
+            نام</label>
+    </p>
+    <p class="email">
+        <input type="text" name="email" id="email" placeholder="mail@gmail.com" />
+        <label for="email">
+            ایمیل</label>
+    </p>
+    <p class="web">
+        <input type="text" name="web" id="web" placeholder="www.google.com" />
+        <label for="web">
+            وب سایت</label>
+    </p>
+    <p class="text">
+        <textarea name="text" placeholder="متن خود را وارد کنید " /></textarea>
+    </p>
+    <p class="submit">
+        <input type="submit" value="ارسال" />
+    </p>
+    </form>
+</body>
+</html>
