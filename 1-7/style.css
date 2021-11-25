@@ -1,0 +1,194 @@
+
+
+@font-face {
+  font-family: 'Yekan';
+  src: url('fonts/Yekan.eot?-wwn5ej');
+  src: url('fonts/Yekan.eot?#iefix-wwn5ej') format('embedded-opentype'),
+  url('fonts/Yekan.woff?-wwn5ej') format('woff'),
+  url('fonts/Yekan.ttf?-wwn5ej') format('truetype'),
+  url('fonts/Yekan.svg?-wwn5ej#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ :lang(fa){
+  direction:rtl;
+}
+		  
+body
+{
+  font-family: 'Yekan';
+  overflow:auto;
+  float:inherit;
+  height:auto;
+  background: rgb(11,119,193);
+  background: linear-gradient(140deg, rgba(11,119,193,1) 0%, rgba(187,126,0,1) 100%);
+}
+
+
+/*  Outlined text field */
+
+.input-outline{
+  outline: none;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 5px;  
+  padding:0px 16px 0px 12px;
+  color: rgb(128, 128, 128);
+  transition: 0.1s ease-out;
+  text-indent: 30px;
+  width: 100%;
+  height:48px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-size:16px;
+  font-family: 'Yekan';
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.87);
+}
+
+.label-outline{
+  position: absolute;
+  font-size: 14px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background:#FFFFFF;
+  color: gray;
+  padding: 0 4px;
+  margin: 0 40px;
+  transition: .1s ease-out;
+  transform-origin: left top;
+  pointer-events: none;
+}
+
+.outline-textfield {
+  position: relative;
+}
+
+input:focus {
+  border-color: #1000eec7;  
+}
+
+input:focus + label {
+  color: #8400ff80;
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
+
+input:not(:placeholder-shown) + label {
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
+
+/*  help text of field */
+
+.help-text
+{
+  margin-right: 40px;
+}
+
+/*  Outlined text field icons */
+
+
+.input-TRicon{
+  position: absolute;
+  cursor: pointer;
+  margin-top: -45px;
+  color:#ff0000;
+  font-size:18px;
+  padding:8px 12px 8px 12px;
+  left:0;
+}
+
+.input-LEicon{
+  position: absolute;
+  cursor: pointer;
+  margin-top: -45px;
+  color:#0099ff7c;
+  font-size:18px;
+  padding:8px 12px 8px 12px;
+  right:0;
+}
+
+/*  display */
+
+.container {
+  width:80%;
+  margin-top:50px;
+  border-radius: 2em;
+  background: rgba(167, 79, 123, 0.418);
+  background: linear-gradient(0deg, rgb(167, 79, 79) 0%, rgb(105, 238, 149) 100%);
+  padding: 20px;
+  margin-right:8%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.texarea{
+ border-radius: 2em;
+ height:10em;
+ width:100%;
+}
+
+ .display8.Pcontact{
+  width:45%;
+  display:inline-block;
+  margin-right:10px;
+  margin-top:5px;
+
+}
+
+ .display9.Pcontact{
+  margin-right:40px;
+  margin-top:5px;
+ 
+}
+
+
+/*  button */
+
+.btn i{
+  font-size:18px;
+  padding:0 8px 0 0;
+  vertical-align:middle;	
+}
+
+.btn{
+  font-family: 'Yekan';	
+  min-width:64px;
+  height:40px;
+  font-size:14px;
+  cursor:pointer;
+  padding:0 24px 0 16px;
+  border-radius:2em;
+  vertical-align:middle;
+  margin:8px 0px 8px 8px;
+  border-width:1px; 
+  display:inline-block;
+  transition: all .3s;
+}
+
+.btn-contained.primary {
+  background-color:#00ff15ab;
+  color:#FFFFFF;
+  border:none;
+  vertical-align:middle;
+  display:inline-block;
+}
+	
+.btn-contained.primary:hover {
+  color:#FFFFFF;
+  background-color:#d400ff8f;
+  vertical-align:middle;
+}
+
+.btn-contained.primary:focus {
+  background-color:#ff0000c2;
+  color:#ffffff;
+  outline:none;
+}
+
+.btn-contained.primary:active {
+  background-color:#0300c833;
+  color:#FFFFFF;
+  outline:none;
+}
+
+
